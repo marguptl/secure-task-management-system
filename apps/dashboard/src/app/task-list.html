@@ -1,0 +1,21 @@
+<div *ngFor="let task of tasks$ | async" class="task-card">
+  <div class="task-title">{{ task.title }}</div>
+  <ng-container *ngIf="role$ | async as role">
+    <div class="task-actions">
+      <button 
+        *ngIf="role === 'Admin' || role === 'Owner'" 
+        (click)="delete(task.id)"
+        class="btn delete"
+      >
+        Delete
+      </button>
+      <button 
+        *ngIf="role === 'Admin'" 
+        (click)="complete(task.id)"
+        class="btn complete"
+      >
+        Mark Complete
+      </button>
+    </div>
+  </ng-container>
+</div>

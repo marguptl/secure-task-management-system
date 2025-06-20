@@ -1,0 +1,132 @@
+.add-task {
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.add-task:hover {
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}
+
+.add-task.disabled {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+.add-task h3 {
+  margin: 0 0 20px 0;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.role-indicator {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  border-left: 3px solid var(--primary-color);
+}
+
+.disabled-message {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: var(--status-in-progress);
+  border: 1px solid var(--warning-color);
+  border-radius: 4px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.form-input, .form-textarea, .form-select {
+  padding: 12px;
+  border: 2px solid var(--input-border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.form-input:hover, .form-textarea:hover, .form-select:hover {
+  border-color: var(--primary-color);
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 3px var(--focus-color);
+}
+
+.form-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.submit-btn:disabled {
+  background-color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-task {
+    padding: 15px;
+  }
+  
+  .task-form {
+    gap: 15px;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+} 

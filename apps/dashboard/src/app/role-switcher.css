@@ -1,0 +1,71 @@
+.role-switcher {
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.role-switcher:hover {
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}
+
+.role-switcher h3 {
+  margin: 0 0 20px 0;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.role-switcher label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.role-select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--input-border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.role-select:hover {
+  border-color: var(--primary-color);
+}
+
+.role-select:focus {
+  outline: none;
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 3px var(--focus-color);
+}
+
+.current-role {
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 10px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  border-left: 4px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .role-switcher {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .role-switcher h3 {
+    font-size: 1.2rem;
+  }
+}
+  

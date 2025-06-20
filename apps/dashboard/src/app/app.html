@@ -1,0 +1,48 @@
+<div class="app-container">
+  <!-- Header with role switcher and theme toggle -->
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="app-title">Secure Task Manager</h1>
+      <div class="header-controls">
+        <app-role-switcher></app-role-switcher>
+        <app-theme-toggle></app-theme-toggle>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <main class="app-main">
+    <app-add-task></app-add-task>
+    <app-task-list></app-task-list>
+  </main>
+
+  <!-- Footer with additional info -->
+  <footer class="app-footer">
+    <p class="footer-text">
+      Secure Task Management System - Built with Angular & NgRx
+    </p>
+  </footer>
+</div>
+
+<style>
+  @media (max-width: 768px) {
+    div[style*="display: grid"] {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+    
+    div[style*="min-width: 300px"] {
+      min-width: auto !important;
+      max-width: none !important;
+    }
+    
+    div[style*="min-width: 500px"] {
+      min-width: auto !important;
+    }
+    
+    h1[style*="font-size: 2.5rem"] {
+      font-size: 2rem !important;
+    }
+  }
+</style>
+  
