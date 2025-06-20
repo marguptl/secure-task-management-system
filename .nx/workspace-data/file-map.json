@@ -39,60 +39,60 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "LICENSE",
-        "hash": "13849683327905257896"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "4045277838558782790"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "eslint.config.mjs",
-        "hash": "10770449096712831357"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": ".gitignore",
+        "hash": "729356607714649514"
       },
       {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
-        "file": "README.md",
-        "hash": "14633750876629112558"
-      },
-      {
         "file": "CONTRIBUTING.md",
         "hash": "16286565477819363352"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "4045277838558782790"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "13849683327905257896"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
       },
       {
         "file": "nx.json",
         "hash": "6233398581004878923"
       },
       {
-        "file": "package.json",
-        "hash": "15894730798934240232"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "729356607714649514"
-      },
-      {
         "file": "tsconfig.base.json",
         "hash": "13842354980993414464"
       },
       {
-        "file": ".prettierignore",
-        "hash": "5407418692668764289"
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": "README.md",
+        "hash": "14633750876629112558"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "10770449096712831357"
+      },
+      {
+        "file": "package.json",
+        "hash": "15894730798934240232"
       }
     ],
     "projectFileMap": {
