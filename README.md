@@ -23,7 +23,6 @@ A comprehensive task management application built with Angular 17, NgRx, NestJS,
 ### Role-Based Permissions
 - **Admin**: Full access to all features
 - **Manager**: Can create, edit, and delete tasks
-- **User**: Can view and mark tasks as complete
 - **Guest**: Read-only access
 
 ## 🛠️ Getting Started
